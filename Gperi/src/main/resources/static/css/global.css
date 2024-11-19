@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --wwwrazercom-arial-narrow-28: Arial;
+
+  /* font sizes */
+  --font-size-xl: 16px;
+  --wwwrazercom-arial-narrow-28-size: 28px;
+  --font-size-37xl: 56px;
+
+  /* Colors */
+  --color-gray-100: #1e1e1e;
+  --wwwrazercom-nero: #fff;
+
+  /* Gaps */
+  --gap-5xl: 24px;
+  --gap-4xs: 9px;
+  --gap-lg: 18px;
+
+  /* Paddings */
+  --padding-base: 16px;
+  --padding-xl: 20px;
+}

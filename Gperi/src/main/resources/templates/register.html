@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+              <link rel="stylesheet" th:href="@{/css/global.css}" />
+<link rel="stylesheet" th:href="@{/css/gb.css}" />
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"  />
+    <link  rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Arial:wght@400&display=swap"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <title>Signup</title>
+</head>
+<style>
+.join {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    max-width: 460px; /* Adjust as needed */
+}
+
+.container form {
+    width: 200%;
+    max-width: 400px; /* Adjust as needed */
+    text-align: center;
+}
+
+.container form h2,
+.container form p {
+    color: white;
+}
+
+.container form .form-group {
+    text-align: left;
+}
+
+.container form .btn {
+text-align: center;
+    margin-top: 20px;
+}
+</style>
+<body>
+
+
+      <div class="header">
+        <div class="nav" id="nav">
+          <img class="logo-icon" alt="" src="./public/logo@2x.png" />
+
+          <div class="menu-items">
+            <div class="menu-item"> 
+              <div class="menu-item1"><a th:href="@{/}" href="#">Home</a></div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item1"><a th:href="@{/shop}" href="#">Shop</a></div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item1"><a href="$" th:href="@{/about}">About Us</a></div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item1"><a href="#" th:href="@{/contact}" >Contact Us</a></div>
+            </div>
+
+           
+
+       
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="join" style="height:100vh;">
+<div class="container">
+    <div class="col-sm-6">
+        <form th:action="@{/register}" th:object="${user}" method="post">
+        
+        <h3 style="margin-top: 10px; color:white; ">Sign Up Now</h3>
+        <p style="color:white;">Please fill out this to register</p>
+            <div class="form-group">
+                <label for="firstName" style="color:white;">First Name</label>
+                <input type="text" name="firstName" id="firstName" required placeholder="Your Firstname" class="form-control form-control-lg">
+            </div>
+            <div class="form-group">
+                <label for="lastName" style="color:white;">Last Name</label>
+                <input type="text" name="lastName" id="lastName" required placeholder="Your Lastname" class="form-control form-control-lg">
+            </div>
+            <div class="form-group">
+                <label for="email" style="color:white;">Email address</label>
+                <input type="email" class="form-control form-control-lg" required minlength="6" placeholder="Email" name="email" id="email"
+                       aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted" style="color:white;">We'll never share your email with
+                    anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="password" style="color:white;">Password</label>
+                <input type="password" class="form-control form-control-lg" required placeholder="Password" name="password"
+                       id="password">
+            </div>
+
+            <input type="submit" value="Register" class="btn btn-primary btn-block"><br>
+            <span style="margin-top: 10px; color:white;" >Already have an account <a class="linkControl" href="./login.html"
+                                                                      th:href="@{/login}">Login here</a></span>
+        </form>
+    </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

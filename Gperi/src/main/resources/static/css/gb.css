@@ -1,0 +1,172 @@
+*{
+position: sticky;
+
+}
+.logo-icon {
+    width: 47px;
+    position: relative;
+    height: 32px;
+    object-fit: cover;
+  }
+  .menu-item1 {
+    position: relative;
+    opacity: 0.5;
+  }
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--padding-base) var(--padding-xl);
+  }
+  .iconamoonsearch-bold {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .menu-item12 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--padding-base) var(--padding-xl);
+    
+  }
+  .header,
+  .menu-items,
+  .nav {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .menu-items {
+    justify-content: flex-start;
+    gap: 45px;
+  }
+  .header,
+  .nav {
+    position: sticky;
+    width: 1209px;
+    justify-content: space-between;
+  }
+  
+  .header {
+    width: 100%;
+    background-color: #000;
+    border-bottom: 1px solid #0089d0;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-poppins);
+  }
+  .gaming-peripherals-at,
+  .praent-v-icon {
+    position: relative;
+  }
+  .praent-v-icon {
+    width: 16px;
+    height: 18px;
+  }
+  .menu-item1 a {
+    position: relative;
+    text-decoration: none;
+    color: #fff; /* Set link color */
+  }
+  
+  
+  .menu-item1 a::before,
+  .menu-item1 a::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Initially set width to 0 */
+    height: 2px; /* Set line height */
+    bottom: 0;
+    background-color: #fff; /* Set line color */
+    transition: width 0.3s, opacity 0.3s; /* Add transition effects */
+  }
+  .menu-item1 a::before {
+    left: 0;
+    opacity: 0;
+  }
+  
+  .menu-item1 a::after {
+    right: 0;
+    opacity: 1;
+    
+  }
+  
+  .menu-item1 a:hover::before,
+  .menu-item1 a:hover::after {
+    width: 50%; /* Set line width on hover */
+    opacity: 1; /* Show line on hover */
+  }
+  
+  
+  i {
+    opacity: 0.5; 
+    color: #fff; 
+    transition: opacity 0.3s; 
+  }
+  
+  i:hover {
+    opacity: 1; 
+  }
+   
+  .join {
+    width: 100%;
+    background-color: var(--color-gray-100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 10px;
+    text-align: left;
+    font-size: 14px;
+    font-family: var(--font-poppins);
+  }
+
+ 
+
+  
+  .gaming-peripherals-at a {
+    position: relative;
+    text-decoration: none;
+    color: #fff; /* Set link color */
+  }
+  
+  
+  .gaming-peripherals-at a::before,
+  .gaming-peripherals-at a::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Initially set width to 0 */
+    height: 2px; /* Set line height */
+    bottom: 0;
+    background-color: #fff; /* Set line color */
+    transition: width 0.3s, opacity 0.3s; /* Add transition effects */
+  }
+  .gaming-peripherals-at a::before {
+    left: 0;
+    opacity: 0;
+  }
+  
+  .gaming-peripherals-at a::after {
+    right: 0;
+    opacity: 0;
+  }
+  
+  .gaming-peripherals-at a:hover::before,
+  .gaming-peripherals-at a:hover::after {
+    width: 50%; /* Set line width on hover */
+    opacity: 1; /* Show line on hover */
+  }
+  
+  
